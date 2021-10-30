@@ -1,4 +1,4 @@
-package com.github.covidalert.microservicetemplate;
+package com.github.covidalert.newsprovider.config;
 
 import org.keycloak.adapters.KeycloakConfigResolver;
 import org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver;
@@ -25,7 +25,7 @@ public class KeycloakSecurityConfig extends KeycloakWebSecurityConfigurerAdapter
     {
         super.configure(http);
         http.authorizeRequests()
-                .antMatchers("/api/**").hasAnyRole("user")
+                //.antMatchers("/api/**").hasAnyRole("user")
                 .anyRequest().permitAll();
         http.csrf().disable();
         http.cors();
