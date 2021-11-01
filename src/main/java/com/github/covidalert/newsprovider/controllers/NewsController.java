@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/news")
-public class RedisController
+public class NewsController
 {
 
     @Autowired
