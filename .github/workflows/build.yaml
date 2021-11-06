@@ -26,6 +26,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v2
       - name: Setup SSH and deploy to Dokku
         env:
           SSH_KEY: ${{ secrets.DOKKU_SSH_KEY }}
