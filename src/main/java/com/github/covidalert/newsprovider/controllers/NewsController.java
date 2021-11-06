@@ -19,6 +19,7 @@ public class NewsController
     @PutMapping
     public void updateNews(@RequestBody @Valid List<Article> articles)
     {
+        System.out.println("News update received");
         articlesRepository.saveAll(articles);
     }
 
