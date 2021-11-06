@@ -38,4 +38,5 @@ jobs:
           chmod 700 ~/.ssh
           ssh-keyscan "vps.florent.best" >> ~/.ssh/known_hosts
           chmod 644 ~/.ssh/known_hosts
-          tar -c . | ssh dokku@vps.florent.best git:from-archive news-provider --
+          git remote add dokku dokku@vps.florent.best:news-provider
+          git push dokku master
