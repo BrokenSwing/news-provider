@@ -18,13 +18,19 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-validation'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.security:spring-security-test'
+    testImplementation 'org.assertj:assertj-core:3.21.0'
 
     // Keycloak
     implementation 'org.keycloak:keycloak-spring-boot-starter:15.0.2'
+    testImplementation 'com.c4-soft.springaddons:spring-security-oauth2-test-webmvc-addons:3.1.1'
 
     // Redis
     implementation 'org.springframework.data:spring-data-redis'
     implementation 'io.lettuce:lettuce-core:6.1.5.RELEASE'
+    testImplementation('it.ozimov:embedded-redis:0.7.3') {
+        exclude group: 'ch.qos.logback' //, name: 'logback-classic'
+        exclude group: 'org.slf4j' //, name: 'log4j-over-slf4j'
+    }
 
 }
 
