@@ -1,4 +1,4 @@
-# News Provider [![Build](https://github.com/Covid-Alert-Microservices/news-provider/actions/workflows/build.yaml/badge.svg)](https://github.com/Covid-Alert-Microservices/news-provider/actions/workflows/build.yaml)
+# News Provider [![Build](https://github.com/Covid-Alert-Microservices/news-provider/actions/workflows/build.yaml/badge.svg)](https://github.com/Covid-Alert-Microservices/news-provider/actions/workflows/build.yaml) [![codecov](https://codecov.io/gh/Covid-Alert-Microservices/news-provider/branch/master/graph/badge.svg?token=R3KWA2KVNT)](https://codecov.io/gh/Covid-Alert-Microservices/news-provider)
 
 This repository contains the source code of the service providing the latest news to the user.
 
